@@ -5,10 +5,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>HTML Tutorial</title>
 </head>
 <body>
+    <!-- Heading -->
     <div class="heading">
         <h1>HTML Tutorial</h1>
+    </div>
+
+    <!-- Topic container -->
+    <div class="list_container">
+        <p class="contents_title">Contents</p>
+        <ul class="contents_list">
+            <li>
+                <span>1. </span><a href="#html_element">HTML Elements</a>
+            </li>
+            <ul>
+                <li>
+                    <span>1.1 </span><a href="#element">Elements</a>
+                </li>
+                <li>
+                    <span>1.2 </span><a href="#nested_element">Nested Elements</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- contents -->
+    <div class="contents">
+
+        <!-- Topic : HTML Elements -->
+        <div class="topic element">
+            <div class="vertical-line"></div>
+            <h2 id="html_element">&nbsp;HTML Elements</h2>
+            <div class="frame">
+                <h3 id="element">Elements</h3>
+                <p>Elements ใน HTML (หรือที่เรียกกันว่า tag) จะครอบด้วยเครื่องหมาย angle brackets <> โดยมีรูปแบบดังนี้<br>
+                    &lt;tagname&gt; ... Content ... &lt;/tagname&gt;<br>
+                    จะเห็นได้ว่าประกอบไปด้วยแท็กเปิด (Start tag) และแท็กปิด (End tag)
+                </p>
+                <h3 id="nested_element">Nested Elements</h3>
+                <p>เป็น elements ที่สามารถใส่ elements อื่นๆ ซ้อนได้ ยกตัวอย่างเช่น<br>
+                    &lt;html&gt;, &lt;body&gt;, &lt;h1&gt; and &lt;p&gt;<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p>&lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;body&gt;<br>
+                            <br>   
+                            &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+                            &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                            <br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </p>
+                    </div>
+                </p>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
