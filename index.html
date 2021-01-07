@@ -10,7 +10,8 @@
 <body>
     <!-- Heading -->
     <div class="heading">
-        <h1>HTML Tutorial</h1>
+        <h1><img src="html5.png" alt="Logo HTML5">
+            HTML Tutorial</h1>
     </div>
 
     <!-- Topic container -->
@@ -27,7 +28,19 @@
                 <li>
                     <span>1.2 </span><a href="#nested_element">Nested Elements</a>
                 </li>
+                <li>
+                    <span>1.3 </span><a href="#never_skip_end_tag">Never Skip the End Tag</a>
+                </li>
+                <li>
+                    <span>1.4 </span><a href="#empty_html_elements">Empty HTML Elements</a>
+                </li>
+                <li>
+                    <span>1.5 </span><a href="#not_case_sensitive">HTML is Not Case Sensitive</a>
+                </li>
             </ul>
+            <li>
+                <span>2. </span><a href="#html_attributes">HTML Attributes</a>
+            </li>
         </ul>
     </div>
 
@@ -41,8 +54,8 @@
             <div class="frame">
                 <h3 id="element">Elements</h3>
                 <p>Elements ใน HTML (หรือที่เรียกกันว่า tag) จะครอบด้วยเครื่องหมาย angle brackets <> โดยมีรูปแบบดังนี้<br>
-                    &lt;tagname&gt; ... Content ... &lt;/tagname&gt;<br>
-                    จะเห็นได้ว่าประกอบไปด้วยแท็กเปิด (Start tag) และแท็กปิด (End tag)
+                    <p class="example">&lt;tagname&gt; ... Content ... &lt;/tagname&gt;</p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จะเห็นได้ว่าประกอบไปด้วยแท็กเปิด (Start tag) และแท็กปิด (End tag)
                 </p>
                 <h3 id="nested_element">Nested Elements</h3>
                 <p>เป็น elements ที่สามารถใส่ elements อื่นๆ ซ้อนได้ ยกตัวอย่างเช่น<br>
@@ -61,6 +74,46 @@
                         </p>
                     </div>
                 </p>
+                <p>จากตัวอย่างจะเห็นได้ว่าภายใน tag &lt;html&gt; มี tag &lt;body&gt; ซ้อนอยู่ 
+                    และใน tag &lt;body&gt; ก็มี tag &lt;h1&gt; และ &lt;p&gt; ซ้อนอยู่เช่นกัน<br>
+                    โดย tag &lt;h1&gt; จะเป็นการใส่หัวเรื่องหรือหัวข้อ (heading) <br> 
+                    ส่วน tag &lt;p&gt; จะเป็นการใส่เนื้อเรื่อง ซึ่งจะมีการย่อหน้าเข้ามาด้วย (paragraph)
+                </p>
+                <h3 id="never_skip_end_tag">Never Skip the End Tag</h3>
+                <p>ในบาง tag ถึงแม้ว่าเราจะลืมใส่ tag ปิด แต่ก็ยังแสดงผลออกมาได้ถูกต้อง</p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p>&lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br>
+                        <br>   
+                        &lt;p&gt;This is a paragraph.<br>
+                        &lt;p&gt;This is a paragraph.<br>
+                        <br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </p>
+                </div>
+                <h3 id="empty_html_elements">Empty HTML Elements</h3>
+                <p>เป็น elements ที่ไม่ต้องใส่ content หลัง tag<br>
+                    ซึ่ง tag &lt;br&gt; จะเป็นการให้ content หลังจากแท็กนี้ขึ้นบรรทัดใหม่ โดยเวลาใช้งานไม่ต้องใส่แท็กปิด
+                </p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p>&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</p>
+                </div>
+                <h3 id="not_case_sensitive">HTML is Not Case Sensitive</h3>
+                <p>tag name สามารถเป็นได้ทั้งตัวพิมพ์เล็กและตัวพิมพ์ใหญ่ แต่ส่วนใหญ่จะนิยมใช้ตัวพิมพ์เล็กมากกว่า</p>
+            </div>
+        </div>
+
+        <!-- Topic : HTML Attributes -->
+        <div class="topic attributes">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="html_attributes">&nbsp;HTML Attributes</h2>
+            <div class="frame">
+                
             </div>
         </div>
 

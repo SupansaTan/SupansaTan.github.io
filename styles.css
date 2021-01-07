@@ -1,10 +1,15 @@
 body {
-    background-image: linear-gradient(#55ACEE, white 40%);
+    background-image: linear-gradient(#55ACEE, white 10%);
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
 }
 
 /* heading */
+img {
+    width: 50px;
+    vertical-align: middle;
+}
+
 h1 {
     text-align: center;
 }
@@ -19,6 +24,7 @@ h1 {
 .list_container {
     float: right;
     position: sticky;
+    top: 1em;
     width: 20%;
     border: 5px solid #55ACEE;
     padding: 10px;
@@ -27,7 +33,7 @@ h1 {
 
 /* content */
 .contents {
-    max-width: 65%;
+    max-width: 80%;
     font-family: 'Poppins', 'Sarabun', sans-serif;
 }
 
@@ -48,9 +54,8 @@ h2 {
 }
 
 .frame {
-    position: fixed;
-    right: 30%;
-    width: 65%;
+    right: 5%;
+    width: 80%;
     margin: auto;
     background-color: #F7F7F7;
     border-radius: 10px;
