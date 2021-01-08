@@ -21,6 +21,10 @@ h1 {
     font-weight: 500;
 }
 
+.contents_list {
+    font-size: 14px;
+}
+
 .list_container {
     float: right;
     position: sticky;

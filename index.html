@@ -22,25 +22,21 @@
                 <span>1. </span><a href="#html_element">HTML Elements</a>
             </li>
             <ul>
-                <li>
-                    <span>1.1 </span><a href="#element">Elements</a>
-                </li>
-                <li>
-                    <span>1.2 </span><a href="#nested_element">Nested Elements</a>
-                </li>
-                <li>
-                    <span>1.3 </span><a href="#never_skip_end_tag">Never Skip the End Tag</a>
-                </li>
-                <li>
-                    <span>1.4 </span><a href="#empty_html_elements">Empty HTML Elements</a>
-                </li>
-                <li>
-                    <span>1.5 </span><a href="#not_case_sensitive">HTML is Not Case Sensitive</a>
-                </li>
+                <li><span>1.1 </span><a href="#element">Elements</a></li>
+                <li><span>1.2 </span><a href="#nested_element">Nested Elements</a></li>
+                <li><span>1.3 </span><a href="#never_skip_end_tag">Never Skip the End Tag</a></li>
+                <li><span>1.4 </span><a href="#empty_html_elements">Empty HTML Elements</a></li>
+                <li><span>1.5 </span><a href="#not_case_sensitive">HTML is Not Case Sensitive</a></li>
             </ul>
             <li>
                 <span>2. </span><a href="#html_attributes">HTML Attributes</a>
             </li>
+            <ul>
+                <li><span>2.1 </span><a href="#href_attb">The href Attribute</a></li>
+                <li><span>2.2 </span><a href="#src_attb">The src Attribute</a></li>
+                <li><span>2.3 </span><a href="#width_height_attb">The width and height Attributes</a></li>
+                <li><span>2.4 </span><a href="#alt_attb">The alt Attribute</a></li>
+            </ul>
         </ul>
     </div>
 
@@ -52,14 +48,18 @@
             <div class="vertical-line"></div>
             <h2 id="html_element">&nbsp;HTML Elements</h2>
             <div class="frame">
+
+                <!-- Elements -->
                 <h3 id="element">Elements</h3>
                 <p>Elements ใน HTML (หรือที่เรียกกันว่า tag) จะครอบด้วยเครื่องหมาย angle brackets <> โดยมีรูปแบบดังนี้<br>
                     <p class="example">&lt;tagname&gt; ... Content ... &lt;/tagname&gt;</p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จะเห็นได้ว่าประกอบไปด้วยแท็กเปิด (Start tag) และแท็กปิด (End tag)
                 </p>
+
+                <!-- Nested Elements -->
                 <h3 id="nested_element">Nested Elements</h3>
                 <p>เป็น elements ที่สามารถใส่ elements อื่นๆ ซ้อนได้ ยกตัวอย่างเช่น<br>
-                    &lt;html&gt;, &lt;body&gt;, &lt;h1&gt; and &lt;p&gt;<br>
+                    &lt;html&gt;, &lt;body&gt;, &lt;h1&gt; และ &lt;p&gt;<br>
                     <div class="example">
                         <h4>Example</h4>
                         <p>&lt;!DOCTYPE html&gt;<br>
@@ -79,6 +79,8 @@
                     โดย tag &lt;h1&gt; จะเป็นการใส่หัวเรื่องหรือหัวข้อ (heading) <br> 
                     ส่วน tag &lt;p&gt; จะเป็นการใส่เนื้อเรื่อง ซึ่งจะมีการย่อหน้าเข้ามาด้วย (paragraph)
                 </p>
+
+                <!-- Never Skip the End Tag -->
                 <h3 id="never_skip_end_tag">Never Skip the End Tag</h3>
                 <p>ในบาง tag ถึงแม้ว่าเราจะลืมใส่ tag ปิด แต่ก็ยังแสดงผลออกมาได้ถูกต้อง</p>
                 <div class="example">
@@ -94,6 +96,8 @@
                         &lt;/html&gt;<br>
                     </p>
                 </div>
+
+                <!-- Empty HTML Elements -->
                 <h3 id="empty_html_elements">Empty HTML Elements</h3>
                 <p>เป็น elements ที่ไม่ต้องใส่ content หลัง tag<br>
                     ซึ่ง tag &lt;br&gt; จะเป็นการให้ content หลังจากแท็กนี้ขึ้นบรรทัดใหม่ โดยเวลาใช้งานไม่ต้องใส่แท็กปิด
@@ -102,6 +106,8 @@
                     <h4>Example</h4>
                     <p>&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</p>
                 </div>
+
+                <!-- HTML is Not Case Sensitive -->
                 <h3 id="not_case_sensitive">HTML is Not Case Sensitive</h3>
                 <p>tag name สามารถเป็นได้ทั้งตัวพิมพ์เล็กและตัวพิมพ์ใหญ่ แต่ส่วนใหญ่จะนิยมใช้ตัวพิมพ์เล็กมากกว่า</p>
             </div>
@@ -113,7 +119,57 @@
             <div class="vertical-line"></div>
             <h2 id="html_attributes">&nbsp;HTML Attributes</h2>
             <div class="frame">
+                <p>ใน elements สามารถมี attributes ได้ โดยจะใส่ไว้ในแท็กเปิด และจะอยู่ในรูปของ name="value"</p>
                 
+                <!-- href attribute -->
+                <h3 id="href_attb">The href Attribute</h3>
+                <p>tag &lt;a&gt; จะใช้ในการเพิ่ม hyperlink กับประโยค โดยจะมี attribute ที่ชื่อว่า "href" ในการระบุ URL ของเว็บที่ต้องการ<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">&lt;a href="https://supansatan.github.io/"&gt;Click to my page&lt;a&gt;</p>
+                    </div>
+                </p>
+                <p>จะได้ผลออกมาแบบด้านขวามือนี้ : 
+                    <a href="https://supansatan.github.io/">Click to my page</a>
+                </p>
+
+                <!-- src attribute -->
+                <h3 id="src_attb">The src Attribute</h3>
+                <p>tag &lt;img&gt; จะใช้ในการเพิ่มรูปภาพ โดยจะมี attribute ที่ชื่อว่า "src" ในการระบุ path ของรูปที่ต้องการนำมาแสดงบนเว็บ 
+                    หรือจะใช้ระบุ link ของรูปนั้นจากเว็บต่างๆก็ได้เช่นกัน<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">&lt;img src="html5.png"&gt;</p>
+                    </div> 
+                </p>
+                <p>จะได้รูปออกมาแบบด้านล่างนี้ : <br>
+                    <img src="html5.png">
+                </p>
+
+                <!-- width & height attribute -->
+                <h3 id="width_height_attb">The width and height Attributes</h3>
+                <p>ใน tag &lt;img&gt; ควรใช้ attributes ที่ชื่อว่า "width" และ "้height" ในการกำหนดขนาดของรูปที่ต้องการ<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">&lt;img src="html5.png" width="50px" height="70px"&gt;</p>
+                    </div>
+                </p>
+                <p>จะได้รูปออกมาแบบด้านล่างนี้ : <br>
+                    <img src="html5.png" width="50px" height="70px">
+                </p>
+
+                <!-- alt attribute -->
+                <h3 id="alt_attb">The alt Attribute</h3>
+                <p>ใน tag &lt;img&gt; จะมี attributes ที่ชื่อว่า "alt" ในการระบุรายละเอียดเกี่ยวกับรูปนั้น 
+                    เพื่อในกรณีที่รูปไม่สามารถแสดงบนเว็บได้ จะขึ้นมาในลักษณะของข้อความที่ได้ระบุไปใน alt แทนรูปนั้นนั่นเอง<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">&lt;img src="html.png" alt="Logo HTML"&gt;</p>
+                    </div>
+                </p>
+                <p>ในกรณีที่รูปไม่สามารถแสดงบนเว็บได้ จะได้ผลออกมาแบบด้านล่างนี้ : <br>
+                    <img src="html.png" alt="Logo HTML">
+                </p>
             </div>
         </div>
 
