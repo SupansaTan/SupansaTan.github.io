@@ -18,25 +18,8 @@
     <div class="list_container">
         <p class="contents_title">Contents</p>
         <ul class="contents_list">
-            <li>
-                <span>1. </span><a href="#html_element">HTML Elements</a>
-            </li>
-            <ul>
-                <li><span>1.1 </span><a href="#element">Elements</a></li>
-                <li><span>1.2 </span><a href="#nested_element">Nested Elements</a></li>
-                <li><span>1.3 </span><a href="#never_skip_end_tag">Never Skip the End Tag</a></li>
-                <li><span>1.4 </span><a href="#empty_html_elements">Empty HTML Elements</a></li>
-                <li><span>1.5 </span><a href="#not_case_sensitive">HTML is Not Case Sensitive</a></li>
-            </ul>
-            <li>
-                <span>2. </span><a href="#html_attributes">HTML Attributes</a>
-            </li>
-            <ul>
-                <li><span>2.1 </span><a href="#href_attb">The href Attribute</a></li>
-                <li><span>2.2 </span><a href="#src_attb">The src Attribute</a></li>
-                <li><span>2.3 </span><a href="#width_height_attb">The width and height Attributes</a></li>
-                <li><span>2.4 </span><a href="#alt_attb">The alt Attribute</a></li>
-            </ul>
+            <li><span>1. </span><a href="#html_element">HTML Elements</a></li>
+            <li><span>2. </span><a href="#html_attributes">HTML Attributes</a></li>
         </ul>
     </div>
 
@@ -169,6 +152,40 @@
                 </p>
                 <p>ในกรณีที่รูปไม่สามารถแสดงบนเว็บได้ จะได้ผลออกมาแบบด้านล่างนี้ : <br>
                     <img src="html.png" alt="Logo HTML">
+                </p>
+
+                <!-- style attribute -->
+                <h3 id="style_attb">The style Attribute</h3>
+                <p>style ใช้ในการตกแต่งแท็กนั้นๆ ไม่ว่าจะเป็นปรับสี, เปลี่ยนฟอนต์, ปรับขนาดต่างๆ และอื่นๆอีกมากมาย<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">&lt;p style="color: green;"&gt;นี่คือ paragraph สีเขียว&lt;/p&gt;</p>
+                    </div>
+                </p>
+                <p>จะได้ผลออกมาแบบนี้ : 
+                    <p style="color: green;">นี่คือ paragraph สีเขียว</p>
+                </p>
+
+                <!-- lang attribute -->
+                <h3 id="lang_attb">The lang Attribute</h3>
+                <p>lang จะใช้ในแท็ก &lt;html&gt; ในการประกาศว่าเว็บของเราจะใช้ภาษาอะไร<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">&lt;html lang="th"&gt; ... &lt;/html&gt;</p>
+                    </div>
+                </p>
+                <p>จากตัวอย่างก็คือเราได้ประกาศว่าเว็บเราจะใช้ภาษาไทยในการแสดงผล</p>
+
+                <!-- title attribute -->
+                <h3 id="title_attb">The title Attribute</h3>
+                <p>title จะใช้ในการอธิบายรายละเอียดของเนื้อหาในแท็กนั้นแบบสั้นๆ โดยเมื่อนำเมาส์ไปชี้บนเนื้อหา จะแสดงข้อมูลที่ใส่ไว้ใน title ออกมา<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">&lt;p title="ฉันชื่อพั้นซ์"&gt;นี่คือฉัน&lt;/p&gt;</p>
+                    </div>
+                </p>
+                <p>จะได้ผลออกมาแบบนี้ : 
+                    <p title="ฉันชื่อพั้นซ์">นี่คือฉัน</p>
                 </p>
             </div>
         </div>
