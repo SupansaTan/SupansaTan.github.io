@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(#55ACEE, white 10%);
+    background-image: linear-gradient(#55ACEE, white 2%);
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,20 +19,31 @@ h1 {
     text-align: center;
     font-size: large;
     font-weight: 500;
+    color: white;
 }
 
-.contents_list {
+.contents_list a {
+    padding: 5px 10px 10px 10px;
     font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.contents_list a:hover {
+    color: black;
 }
 
 .list_container {
-    float: right;
-    position: sticky;
-    top: 1em;
+    position: fixed;
+    top: 10%;
     width: 20%;
-    border: 5px solid #55ACEE;
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #D0D0D0;
+    -moz-box-shadow: 0 10px 6px -6px #D0D0D0;
+    box-shadow: 0 10px 6px -6px #D0D0D0;
     padding: 10px;
-    background-color: white;
+    background-color: #55ACEE;
 }
 
 /* content */
@@ -61,7 +72,7 @@ h2 {
     right: 5%;
     width: 80%;
     margin: auto;
-    background-color: #F7F7F7;
+    background-color: #eee;
     border-radius: 10px;
     padding: 10px;
 }

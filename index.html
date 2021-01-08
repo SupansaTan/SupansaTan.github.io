@@ -17,11 +17,12 @@
     <!-- Topic container -->
     <div class="list_container">
         <p class="contents_title">Contents</p>
-        <ul class="contents_list">
-            <li><span>1. </span><a href="#html_element">HTML Elements</a></li>
-            <li><span>2. </span><a href="#html_attributes">HTML Attributes</a></li>
-            <li><span>3. </span><a href="#html_heading">HTML Heading</a></li>
-        </ul>
+        <div class="contents_list">
+            <a href="#html_element">1. HTML Elements</a><br>
+            <a href="#html_attributes">2. HTML Attributes</a><br>
+            <a href="#html_heading">3. HTML Heading</a><br>
+            <a href="#html_paragraph">4. HTML Paragraphs</a>
+        </div>
     </div>
 
     <!-- contents -->
@@ -219,6 +220,54 @@
                     <h5>Heading 5</h5>
                     <h6>Heading 6</h6>
                 </div>    
+            </div>
+        </div>
+
+        <!-- Topic : HTML Paragraphs -->
+        <div class="topic paragraph">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="html_paragraph">&nbsp;HTML Paragraphs</h2>
+            <div class="frame">
+
+                <!-- Paragraphs -->
+                <h3 id="paragraph">Paragraphs</h3>
+                <p>&lt;p&gt; ใช้ในการเขียนเนื้อหา เมื่อเรียกใช้จะขึ้นบรรทัดใหม่และเว้นวรรคเนื้อหาที่ใส่ไปให้ทั้งหน้าและหลังแท็ก<br>
+                    (ถ้าใน paragraph เราเว้นวรรคไว้ยาวๆ เมื่อนำไปแสดงผลมันจะตัดช่องว่างที่เว้นวรรคนั้นไป)<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;p&gt;บรรทัดแรก&lt;/p&gt;<br>
+                            &lt;p&gt;บรรทัดที่สอง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มีการเว้นวรรค&lt;/p&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>จะได้ผลออกมาแบบด้านล่างนี้ : </p>
+                <div style="margin-left: 10%;">
+                    <p>บรรทัดแรก</p>
+                    <p>บรรทัดที่สอง      มีการเว้นวรรค</p>
+                </div> 
+                
+                <!-- hr -->
+                <h3 id="hr">HTML Horizontal Rules</h3>
+                <p>&lt;hr&gt; ใช้ขีดเส้นคั่น (เส้นแนวนอน) มักจะใช้ในการแบ่งเนื้อหา<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;p&gt;เรื่องแรก&lt;/p&gt;<br>
+                            &lt;hr&gt;<br>
+                            &lt;p&gt;เรื่องที่สอง&lt;/p&gt;<br>
+                            &lt;hr&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>จะได้ผลออกมาแบบด้านล่างนี้ : </p>
+                <div style="margin-left: 10%;">
+                    <p>เรื่องแรก</p>
+                    <hr>
+                    <p>เรื่องที่สอง</p>
+                    <hr>
+                </div> 
             </div>
         </div>
     </div>
