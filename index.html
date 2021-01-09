@@ -21,7 +21,8 @@
             <a href="#html_element">1. HTML Elements</a><br>
             <a href="#html_attributes">2. HTML Attributes</a><br>
             <a href="#html_heading">3. HTML Heading</a><br>
-            <a href="#html_paragraph">4. HTML Paragraphs</a>
+            <a href="#html_paragraph">4. HTML Paragraphs</a><br>
+            <a href="#html_styles">5. HTML Styles</a>
         </div>
     </div>
 
@@ -31,7 +32,7 @@
         <!-- Topic : HTML Elements -->
         <div class="topic element">
             <div class="vertical-line"></div>
-            <h2 id="html_element">&nbsp;HTML Elements</h2>
+            <h2 id="html_element">&ensp;HTML Elements</h2>
             <div class="frame">
 
                 <!-- Elements -->
@@ -102,7 +103,7 @@
         <div class="topic attributes">
             <br>
             <div class="vertical-line"></div>
-            <h2 id="html_attributes">&nbsp;HTML Attributes</h2>
+            <h2 id="html_attributes">&ensp;HTML Attributes</h2>
             <div class="frame">
                 <p>ใน elements สามารถมี attributes ได้ โดยจะใส่ไว้ในแท็กเปิด และจะอยู่ในรูปของ name="value"</p>
                 
@@ -196,7 +197,7 @@
         <div class="topic heading">
             <br>
             <div class="vertical-line"></div>
-            <h2 id="html_heading">&nbsp;HTML Heading</h2>
+            <h2 id="html_heading">&ensp;HTML Heading</h2>
             <div class="frame">
                 <p>ใช้ในการเขียนหัวข้อ โดยจะมีไซส์ทั้งหมด 6 ไซส์ให้เลือก โดย &lt;h1&gt; จะใหญ่สุด แล้วจะเล็กลงไปเรื่อยๆจนถึง &lt;h6&gt;<br>
                     <div class="example">
@@ -227,7 +228,7 @@
         <div class="topic paragraph">
             <br>
             <div class="vertical-line"></div>
-            <h2 id="html_paragraph">&nbsp;HTML Paragraphs</h2>
+            <h2 id="html_paragraph">&ensp;HTML Paragraphs</h2>
             <div class="frame">
 
                 <!-- Paragraphs -->
@@ -311,6 +312,56 @@
                     </pre>
                 </div>
             </div>
+        </div>
+
+        <!-- Topic : HTML Styles -->
+        <div class="topic styles">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="html_styles">&ensp;HTML Styles</h2>
+            <div class="frame">
+
+                <p>style ใช้ในการตกแต่งแท็กนั้นๆ ไม่ว่าจะเป็นปรับสี, เปลี่ยนฟอนต์, ปรับขนาดต่างๆ และอื่นๆอีกมากมาย โดยใช้ syntax ดังนี้<br>
+                    <div class="example">
+                        <p class="example">
+                            &lt;tagname style="property:value;"&gt;
+                        </p>
+                    </div>
+                </p>
+
+                <!-- bg color -->
+                <h3 id="bg_color">Background Color</h3>
+                <p>ใช้ background-color ในการเปลี่ยนสีพื้นหลัง โดยค่าที่เราใส่ไปสามารถใส่ได้หลายแบบมากๆ ไม่ว่าจะเป็นการใส่ชื่อสี, HEX Color Code และอื่นๆ<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;p style="background-color:green"&gt;บรรทัดนี้พื้นหลังสีเขียว&lt;/p&gt;<br>
+                            &lt;p style="background-color:#55ACEE"&gt;บรรทัดนี้พื้นหลังสีฟ้า&lt;/p&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <p style="background-color:green">บรรทัดนี้พื้นหลังสีเขียว</p>
+                    <p style="background-color:#55ACEE">บรรทัดนี้พื้นหลังสีฟ้า</p>
+                </div> 
+
+                <!-- text color -->
+                <h3 id="bg_color">Text Color</h3>
+                <p>ใช้ color ในการเปลี่ยนสีตัวหนังสือ โดยค่าที่เราใส่ไปสามารถใส่ได้หลายแบบมากๆ ไม่ว่าจะเป็นการใส่ชื่อสี, HEX Color Code และอื่นๆ<br>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;h1 style="color:green;"&gt;ตัวหนังสือสีเขียว&lt;/h1&gt;<br>
+                            &lt;p style="color:#55ACEE;"&gt;ตัวหนังสือสีฟ้า&lt;/p&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <h1 style="color:green; text-align: left;">ตัวหนังสือสีเขียว</h1>
+                    <p style="color:#55ACEE; margin-left: 0;">ตัวหนังสือสีฟ้า</p>
+                </div> 
         </div>
     </div>
 </body>
