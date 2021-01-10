@@ -26,7 +26,8 @@
             <a href="#html_textformat">6. HTML Text Formatting</a><br>
             <a href="#html_quote">7. HTML Quotation and Citation Elements</a><br>
             <a href="#html_comment">8. HTML Comments</a><br>
-            <a href="#html_colors">9. HTML Colors</a>
+            <a href="#html_colors">9. HTML Colors</a><br>
+            <a href="#html_css">10. HTML Styles - CSS</a>
         </div>
     </div>
 
@@ -823,6 +824,69 @@
                     <h1 style="background-color:rgba(255, 192, 203, 0.5); text-align: left;">rgba(255, 192, 203, 0.5)</h1>
                     <h1 style="background-color:hsla(0, 100%, 75%, 0.5); text-align: left;">hsla(0, 100%, 75%, 0.5)</h1>
                 </div>
+            </div>
+        </div>
+
+        <!-- Topic : HTML CSS -->
+        <div class="topic css">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="html_css">&ensp;HTML Styles - CSS</h2>
+            <div class="frame">
+
+                <!-- using -->
+                <h3 id="using_css">Using CSS</h3>
+                <p>เราสามารถใช้ CSS ได้ 3 แบบด้วยกัน <br>
+                    <h4 style="margin-left: 2em;">แบบ Inline หรือการใช้ในแท็กเลย</h4>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;h1 style="color:#FFA07A;"&gt; Heading &lt;/h1&gt;<br>
+                            &lt;h1 style="background-color:#55ACEE;"&gt; Heading &lt;/h1&gt;<br>
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <h1 style="color:#FFA07A; text-align: left;">Heading</h1>
+                    <h1 style="background-color:#55ACEE; text-align: left;">Heading</h1>
+                </div> 
+                <h4 style="margin-left: 2em;">แบบ Internal หรือการใช้แท็ก &lt;style&gt; ในแท็ก &lt;head&gt;</h4>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p class="example">
+                        &lt;head&gt;<br>
+                        &emsp;&lt;style&gt;<br>
+                        &emsp;&emsp;body {background-color: green;}<br>
+                        &emsp;&emsp;h1 {color: blue}<br>
+                        &emsp;&lt;/style&gt;<br>
+                        &lt;/head&gt;
+                    </p>
+                </div>
+                <h4 style="margin-left: 2em;">แบบ External หรือการ link ไปยังที่อยู่ของไฟล์ .css อีกที</h4>
+                <div class="example">
+                    <h4>Example ใน file "styles.css"</h4>
+                    <p class="example">
+                        body {<br>
+                        &emsp;background-color: blue;<br>
+                        &emsp;font-family: arial; <br>
+                        } <br>
+                        p {<br>
+                        &emsp;color: red;<br>
+                        &emsp;font-size: 20px<br>
+                        &emsp;border: 5px solid black; <br>
+                        } <br>
+                        h1 {<br>
+                        &emsp;padding: 10px;<br>
+                        &emsp;border: 2px solid green; <br>
+                        &emsp;margin-left: 10px; <br> 
+                        } <br>
+                    </p>
+                </div>
+                <p><ins>เพิ่มเติม</ins> : <br>
+                    &emsp;padding : ใช้ในการกำหนดระยะห่างภายในขอบ<br>
+                    &emsp;margin : ใช้ในการกำหนดระยะห่างภายนอกขอบ
+                </p>
             </div>
         </div>
     </div>
