@@ -23,7 +23,8 @@
             <a href="#html_heading">3. HTML Heading</a><br>
             <a href="#html_paragraph">4. HTML Paragraphs</a><br>
             <a href="#html_styles">5. HTML Styles</a><br>
-            <a href="#html_textformat">6. HTML Text Formatting</a>
+            <a href="#html_textformat">6. HTML Text Formatting</a><br>
+            <a href="#html_quote">7. HTML Quotation and Citation Elements</a>
         </div>
     </div>
 
@@ -547,6 +548,72 @@
                 <p>ผลลัพธ์ที่ได้ : </p>
                 <div style="margin-left: 10%;">
                     <p>ข้อความนี้มี<sup> ตัวยก</sup></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topic : HTML Quotation -->
+        <div class="topic quote">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="html_quote">&ensp;HTML Quotation and Citation Elements</h2>
+            <div class="frame">
+
+                <!-- blockquote -->
+                <h3 id="blockquote">HTML &lt;blockquote&gt; for Quotations</h3>
+                <p>&lt;blockquote&gt; ใช้ในการกำหนดข้อความหรือเนื้อหาที่ได้หยิบยกมาจากแหล่งอื่นๆ แบบยาวๆ
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;p&gt;This is a quote about Computer Network form Wikipedia website:&lt;/p&gt;<br>
+                            &lt;blockquote cite="https://th.wikipedia.org/wiki/เครือข่ายคอมพิวเตอร์"&gt;<br>
+                            &ensp;เครือข่ายคอมพิวเตอร์ หรือ คอมพิวเตอร์เน็ตเวิร์ก (อังกฤษ: computer network; ศัพท์บัญญัติว่า ข่ายงานคอมพิวเตอร์) <br>
+                            &ensp;คือเครือข่ายการสื่อสารโทรคมนาคมระหว่างคอมพิวเตอร์จำนวนตั้งแต่สองเครื่องขึ้นไปสามารถแลกเปลี่ยนข้อมูลกันได้
+                            &ensp;การเชื่อมต่อระหว่างอุปกรณ์คอมพิวเตอร์ต่างๆในเครือข่าย (โหนดเครือข่าย) จะใช้สื่อที่เป็นสายเคเบิลหรือสื่อไร้สาย
+                            &ensp;เครือข่ายคอมพิวเตอร์ที่รู้จักกันดีคือ อินเทอร์เน็ต
+                            &lt;/blockquote&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <p>This is a quote about Computer Network form Wikipedia website:</p>
+                    <blockquote cite="https://th.wikipedia.org/wiki/เครือข่ายคอมพิวเตอร์">
+                        เครือข่ายคอมพิวเตอร์ หรือ คอมพิวเตอร์เน็ตเวิร์ก (อังกฤษ: computer network; ศัพท์บัญญัติว่า ข่ายงานคอมพิวเตอร์) 
+                        คือเครือข่ายการสื่อสารโทรคมนาคมระหว่างคอมพิวเตอร์จำนวนตั้งแต่สองเครื่องขึ้นไปสามารถแลกเปลี่ยนข้อมูลกันได้ 
+                        การเชื่อมต่อระหว่างอุปกรณ์คอมพิวเตอร์ต่างๆในเครือข่าย (โหนดเครือข่าย) จะใช้สื่อที่เป็นสายเคเบิลหรือสื่อไร้สาย 
+                        เครือข่ายคอมพิวเตอร์ที่รู้จักกันดีคือ อินเทอร์เน็ต
+                    </blockquote>
+                </div>
+
+                <!-- q -->
+                <h3 id="shortquote">HTML &lt;q&gt; for Short Quotations</h3>
+                <p>&lt;q&gt; ใช้ในการกำหนดข้อความหรือเนื้อหาที่ได้หยิบยกมาจากแหล่งอื่นๆ แบบสั้นๆ
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;<br>
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+                </div>
+
+                <!-- abbr -->
+                <h3 id="abbreviate">HTML &lt;abbr&gt; for Abbreviations</h3>
+                <p>&lt;abbr&gt; ใช้ในการกำหนดคำย่อ
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ (ลองเลื่อนเมาส์ไปชี้ดูนะ) : </p>
+                <div style="margin-left: 10%;">
+                    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
                 </div>
             </div>
         </div>
