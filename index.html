@@ -730,7 +730,7 @@
 
                 <!-- bg color -->
                 <h3 id="bg_color">Background Color</h3>
-                <p>
+                <p>สามารถเปลี่ยนพื้นหลังของข้อความได้ โดยใช้ background-color และตามด้วยค่าสีที่ต้องการ
                     <div class="example">
                         <h4>Example</h4>
                         <p class="example">
@@ -745,9 +745,84 @@
                 <div style="margin-left: 10%;">
                     <h1 style="background-color:lightsalmon;">Hello World</h1>
                     <p style="background-color:lightpink; margin-left: 0;">
-                        การใส่สีใน HTML สามารถใช้ได้หลายแบบไม่ว่าจะเป็นชื่อสี, RGB, HEX, HSL, RGBA หรือ HSLA
+                        การใส่สีใน HTML สามารถใช้ได้หลายแบบไม่ว่าจะเป็นชื่อสี, RGB, HEX, HSL, RGBA หรือ HSLA <br>
                     </p>
                 </div> 
+
+                <!-- text color -->
+                <h3 id="text_color">Text Color</h3>
+                <p>สามารถเปลี่ยนสีของข้อความได้ โดยใช้ color และตามด้วยค่าสีที่ต้องการ
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;h1 style="color:lightsalmon;"&gt;Hello World&lt;/h1&gt;<br>
+                            &lt;p style="color:green;"&gt;<br>
+                            &emsp;การใส่สีใน HTML สามารถใช้ได้หลายแบบไม่ว่าจะเป็นชื่อสี, RGB, HEX, HSL, RGBA หรือ HSLA <br>
+                            &lt;/p&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <h1 style="color:lightsalmon; text-align: left;">Hello World</h1>
+                    <p style="color:green; margin-left: 0;">
+                        การใส่สีใน HTML สามารถใช้ได้หลายแบบไม่ว่าจะเป็นชื่อสี, RGB, HEX, HSL, RGBA หรือ HSLA <br>
+                    </p>
+                </div>
+
+                <!-- border color -->
+                <h3 id="border_color">Border Color</h3>
+                <p>สามารถเปลี่ยนสีกรอบได้ โดยใช้ border และตามด้วยความหนาของขอบ, รูปแบบของขอบ และสีขอบที่ต้องการ
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;h1 style="border:2px solid lightsalmon;"&gt;Hello World&lt;/h1&gt;<br>
+                            &lt;p style="border:5px solid green;"&gt;<br>
+                            &emsp;การใส่สีใน HTML สามารถใช้ได้หลายแบบไม่ว่าจะเป็นชื่อสี, RGB, HEX, HSL, RGBA หรือ HSLA <br>
+                            &lt;/p&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <h1 style="border:2px solid lightsalmon; text-align: left;">Hello World</h1>
+                    <p style="border:5px solid green; margin-left: 0;">
+                        การใส่สีใน HTML สามารถใช้ได้หลายแบบไม่ว่าจะเป็นชื่อสี, RGB, HEX, HSL, RGBA หรือ HSLA <br>
+                    </p>
+                </div>
+
+                <!-- color values -->
+                <h3 id="color_value">Color Values</h3>
+                <p>ตัวอย่างการใช้การปรับสีด้วยค่า RGB, HEX และ HSL 
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;h1 style="background-color:#FFA07A;"&gt; #FFA07A &lt;/h1&gt;<br>
+                            &lt;h1 style="background-color:rgb(255, 192, 203);"&gt; gb(255, 192, 203) &lt;/h1&gt;<br>
+                            &lt;h1 style="background-color:hsl(0, 100%, 75%);"&gt; hsl(0, 100%, 75%) &lt;/h1&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <h1 style="background-color:#FFA07A; text-align: left;">#FFA07A</h1>
+                    <h1 style="background-color:rgb(255, 192, 203); text-align: left;">rgb(255, 192, 203)</h1>
+                    <h1 style="background-color:hsl(0, 100%, 75%); text-align: left;">hsl(0, 100%, 75%)</h1>
+                </div>
+                <p>แต่ถ้าต้องการปรับความโปร่งแสงด้วย สามารถใช้ค่าของ RGBA หรือ HSLA ได้เช่นกัน 
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p class="example">
+                            &lt;h1 style="background-color:rgba(255, 192, 203, 0.5);"&gt; rgba(255, 192, 203, 0.5) &lt;/h1&gt;<br>
+                            &lt;h1 style="background-color:hsla(0, 100%, 75%, 0.5);"&gt; hsla(0, 100%, 75%, 0.5) &lt;/h1&gt;
+                        </p>
+                    </div>
+                </p>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <h1 style="background-color:rgba(255, 192, 203, 0.5); text-align: left;">rgba(255, 192, 203, 0.5)</h1>
+                    <h1 style="background-color:hsla(0, 100%, 75%, 0.5); text-align: left;">hsla(0, 100%, 75%, 0.5)</h1>
+                </div>
             </div>
         </div>
     </div>
