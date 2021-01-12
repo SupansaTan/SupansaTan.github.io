@@ -27,7 +27,8 @@
             <a href="#html_quote">7. HTML Quotation and Citation Elements</a><br>
             <a href="#html_comment">8. HTML Comments</a><br>
             <a href="#html_colors">9. HTML Colors</a><br>
-            <a href="#html_css">10. HTML Styles - CSS</a>
+            <a href="#html_css">10. HTML Styles - CSS</a><br>
+            <a href="#html_links">11. HTML Links</a>
         </div>
     </div>
 
@@ -887,6 +888,73 @@
                     &emsp;padding : ใช้ในการกำหนดระยะห่างภายในขอบ<br>
                     &emsp;margin : ใช้ในการกำหนดระยะห่างภายนอกขอบ
                 </p>
+            </div>
+        </div>
+
+        <!-- Topic : HTML Links -->
+        <div class="topic links">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="html_links">&ensp;HTML Links</h2>
+            <div class="frame">
+
+                <!-- syntax -->
+                <h3 id="links_syntax">Syntax</h3>
+                <p>tag &lt;a&gt; ใช้ในการเพิ่ม link ให้กับข้อความ โดยจะใช้ syntax ดังนี้<br>
+                    <div class="example">
+                        <p class="example">
+                            &lt;a href="url"&gt; link text &lt;/a&gt;<br>
+                        </p>
+                    </div>
+                </p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p class="example">
+                        &lt;a href="https://www.w3schools.com/"&gt;Visit W3Schools.com!&lt;/a&gt;<br>
+                    </p>
+                </div>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+                </div> 
+                
+                <!-- target -->
+                <h3 id="target_attb">The target Attribute</h3>
+                <p>target ใช้ในการกำหนดตำแหน่งที่จะเปิดเมื่อกด link นั้น<br>
+                    สามารถใส่ values ได้ 4 แบบด้วยกัน ได้แก่ <br>
+                    <ul>_self : จะเปิดใน tab เดียวกับที่เราคลิก</ul>
+                    <ul>_blank : จะเปิดที่ window หรือ tab ใหม่</ul>
+                    <ul>_parent : จะเปิดใน tab เดียวกับที่เราคลิก </ul>
+                    <ul>_top : จะเปิดใน tab เดียวกับที่เราคลิกเช่นเดียวกับ self แต่จะขยายเต็ม body ของเว็บ</ul>
+                </p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p class="example">
+                        &lt;a href="https://www.w3schools.com/" target="_self"&gt;Visit W3Schools!&lt;/a&gt;<br>
+                    </p>
+                </div>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a>
+                </div>
+
+                <!-- absolute, relative URLS -->
+                <h3 id="target_attb">Absolute URLs vs. Relative URLs</h3>
+                <p>Absolute URLs : จะเป็นการใส่ url ของเว็บอื่นๆ<br>
+                    Relative URLs : จะเป็นการใส่ url ของเว็ยไซต์เดียวกัน แต่จะ link ไปหัวข้ออื่นหรือส่วนอื่น จะสามารถใส่ path ได้เลย โดยไม่ต้องมี "https://www" นำหน้า <br>    
+                </p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p class="example">
+                        &lt;p&gt;&lt;a href="https://www.w3schools.com/"&gt;This is Absolute URLs&lt;/a&gt;&lt;/p&gt;<br>
+                        &lt;p&gt;&lt;a href="#html_links"&gt;This is Relative URLs&lt;/a&gt;&lt;/p&gt;<br>
+                    </p>
+                </div>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <p><a href="https://www.w3schools.com/">This is Absolute URLs</a></p>
+                    <p><a href="#html_links">This is Relative URLs</a></p>
+                </div>
             </div>
         </div>
     </div>
