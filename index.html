@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
     <title>HTML Tutorial</title>
 </head>
 <body>
     <!-- Heading -->
     <div class="heading">
-        <h1><img src="html5.png" alt="Logo HTML5">
+        <h1><img src="/static/img/html5.png" alt="Logo HTML5">
             HTML Tutorial</h1>
     </div>
 
@@ -131,11 +131,11 @@
                     หรือจะใช้ระบุ link ของรูปนั้นจากเว็บต่างๆก็ได้เช่นกัน<br>
                     <div class="example">
                         <h4>Example</h4>
-                        <p class="example">&lt;img src="html5.png"&gt;</p>
+                        <p class="example">&lt;img src="/static/img/html5.png"&gt;</p>
                     </div> 
                 </p>
                 <p>จะได้รูปออกมาแบบด้านล่างนี้ : <br>
-                    <img src="html5.png">
+                    <img src="/static/img/html5.png">
                 </p>
 
                 <!-- width & height attribute -->
@@ -143,11 +143,11 @@
                 <p>ใน tag &lt;img&gt; ควรใช้ attributes ที่ชื่อว่า "width" และ "้height" ในการกำหนดขนาดของรูปที่ต้องการ<br>
                     <div class="example">
                         <h4>Example</h4>
-                        <p class="example">&lt;img src="html5.png" width="50px" height="70px"&gt;</p>
+                        <p class="example">&lt;img src="/static/img/html5.png" width="50px" height="70px"&gt;</p>
                     </div>
                 </p>
                 <p>จะได้รูปออกมาแบบด้านล่างนี้ : <br>
-                    <img src="html5.png" width="50px" height="70px">
+                    <img src="/static/img/html5.png" width="50px" height="70px">
                 </p>
 
                 <!-- alt attribute -->
@@ -954,6 +954,20 @@
                 <div style="margin-left: 10%;">
                     <p><a href="https://www.w3schools.com/">This is Absolute URLs</a></p>
                     <p><a href="#html_links">This is Relative URLs</a></p>
+                </div>
+
+                <!-- img as a link -->
+                <h3 id="img_in_hyberlink">Use an Image as a Link</h3>
+                <p>สามารถใช้ tag &lt;img&gt; ใน tag &lt;a&gt; ได้ เพื่อให้ภาพของเราสามารถคลิกเปิด link ที่ใส่ไปได้<br></p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p class="example">
+                        &lt;a href="#html_links"&gt;&lt;img src="/static/img/bongocat.gif" alt="link to HTML Links" style="width: 70px;"&gt;&lt;/a&gt;<br>
+                    </p>
+                </div>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <a href="#html_links"><img src="/static/img/bongocat.gif" alt="link to HTML Links" style="width: 70px;"></a>
                 </div>
             </div>
         </div>
