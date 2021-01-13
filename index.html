@@ -28,7 +28,8 @@
             <a href="#html_comment">8. HTML Comments</a><br>
             <a href="#html_colors">9. HTML Colors</a><br>
             <a href="#html_css">10. HTML Styles - CSS</a><br>
-            <a href="#html_links">11. HTML Links</a>
+            <a href="#html_links">11. HTML Links</a><br>
+            <a href="#html_img">12. HTML Images</a>
         </div>
     </div>
 
@@ -996,6 +997,55 @@
                 <p>ผลลัพธ์ที่ได้ :</p>
                 <div style="margin-left: 10%;">
                     <button onclick="document.location='#target_attb'">Click please!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topic : HTML Image -->
+        <div class="topic img">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="html_img">&ensp;HTML Images</h2>
+            <div class="frame">
+
+                <!-- syntax -->
+                <h3 id="links_syntax">Syntax</h3>
+                <p>tag &lt;img&gt; ใช้ในการเพิ่มรูปภาพ <br>
+                    <div class="example">
+                        <p class="example">
+                            &lt;img src="url" alt="alternatetext"&gt;<br>
+                        </p>
+                    </div>
+                </p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p class="example">
+                        &lt;img src="/static/img/bongocat.gif" alt="a cat"&gt;<br>
+                    </p>
+                </div>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <img src="/static/img/bongocat.gif" alt="a cat">
+                </div>
+
+                <!-- floating -->
+                <h3 id="img_float">Image Floating</h3>
+                <p>float ใช้ในการจัดให้ภาพอยู่ด้านซ้ายหรือขวาของตัวหนังสือ<br>
+                    <div class="example">
+                        <p class="example">
+                            &lt;img src="url" alt="alternatetext"&gt;<br>
+                        </p>
+                    </div>
+                </p>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p class="example">
+                        &lt;p&gt;&lt;img src="/static/img/bongocat.gif" alt="a cat" style="float:left"&gt;<br>
+                    </p>
+                </div>
+                <p>ผลลัพธ์ที่ได้ : </p>
+                <div style="margin-left: 10%;">
+                    <p><img src="/static/img/bongocat.gif" alt="a cat" style="float:left">Image Floating (left)</p>
                 </div>
             </div>
         </div>
