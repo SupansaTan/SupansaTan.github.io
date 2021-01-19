@@ -1,6 +1,7 @@
 body {
-    background-image: linear-gradient(#55ACEE, white 120px);
+    background-image: linear-gradient(#FED300, white 120px);
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -12,6 +13,7 @@ img {
 
 h1 {
     text-align: center;
+    margin-top: 80px;
 }
 
 /* Topic container */
@@ -19,13 +21,13 @@ h1 {
     text-align: center;
     font-size: large;
     font-weight: 500;
-    color: white;
+    color: #654321;
 }
 
 .contents_list a {
     padding: 5px 10px 10px 10px;
     font-size: 14px;
-    color: white;
+    color: #654321;
     text-decoration: none;
 }
 
@@ -43,7 +45,7 @@ h1 {
     -moz-box-shadow: 0 10px 6px -6px #D0D0D0;
     box-shadow: 0 10px 6px -6px #D0D0D0;
     padding: 10px;
-    background-color: #55ACEE;
+    background-color: #FED300;
 }
 
 /* content */
