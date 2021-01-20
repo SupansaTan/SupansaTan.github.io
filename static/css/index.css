@@ -1,7 +1,4 @@
 body {
-    background-image: linear-gradient(#FED300, white 120px);
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -21,10 +18,24 @@ h1 {
     text-align: center;
     font-size: large;
     font-weight: 500;
+    color: white;
+}
+
+.contents_title_js {
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
     color: #654321;
 }
 
 .contents_list a {
+    padding: 5px 10px 10px 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.contents_list_js a {
     padding: 5px 10px 10px 10px;
     font-size: 14px;
     color: #654321;
@@ -36,6 +47,19 @@ h1 {
 }
 
 .list_container {
+    position: fixed;
+    top: 10%;
+    width: 20%;
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #D0D0D0;
+    -moz-box-shadow: 0 10px 6px -6px #D0D0D0;
+    box-shadow: 0 10px 6px -6px #D0D0D0;
+    padding: 10px;
+    background-color: #55ACEE;
+}
+
+.list_container_js {
     position: fixed;
     top: 10%;
     width: 20%;
@@ -93,4 +117,8 @@ p {
     margin-right: 3em;
     background-color: white;
     padding-left: 2%;
+}
+
+div.example {
+    box-shadow: 5px 5px #D3D3D3;
 }
