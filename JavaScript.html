@@ -55,13 +55,13 @@
     <div class="contents">
 
         <!-- Topic : JS Where To -->
-        <div class="topic element">
+        <div class="topic js-where-to">
             <div class="vertical-line"></div>
             <h2 id="js_where">&ensp;JS Where To</h2>
             <div class="frame">
 
                 <!-- The <script> Tag -->
-                <h3 id="element">The &lt;script&gt; Tag</h3>
+                <h3 id="script_tag">The &lt;script&gt; Tag</h3>
                 <p>เราสามารถใส่ code ของ JavaScript ได้ในระหว่างแท็ก &lt;script&gt; และ &lt;/script&gt; ใน HTML<br>
                     <div class="example">
                         <p class="example">
@@ -73,7 +73,7 @@
                 </p>
 
                 <!-- JavaScript in <head> or <body> -->
-                <h3 id="element">JavaScript in &lt;head&gt; or &lt;body&gt;</h3>
+                <h3 id="js_intag">JavaScript in &lt;head&gt; or &lt;body&gt;</h3>
                 <p>เราสามารถใส่ script ได้ในแท็ก &lt;head&gt; หรือใน &lt;body&gt; หรือจะใส่ในทั้ง 2 แท็กเลยก็ได้<br> 
                     <div class="example">
                         <h4>Example</h4>
@@ -99,7 +99,7 @@
                 </p>
 
                 <!-- External JavaScript -->
-                <h3 id="element">External JavaScript</h3>
+                <h3 id="external_js">External JavaScript</h3>
                 <p>เราสามารถเรียกใช้ JavaScript จากไฟล์ภายนอกได้ โดยใช้ attribute ที่ชื่อ src ในการกำหนด path ของไฟล์ .js<br> 
                     <div class="example">
                         <h4>Example : index.html</h4>
@@ -114,6 +114,83 @@
                             } <br>
                         </p>
                     </div>
+                </p>
+            </div>
+        </div>
+
+        <!-- Topic : JS Output -->
+        <div class="topic js-output">
+            <div class="vertical-line"></div>
+            <h2 id="js_output">&ensp;JS Output</h2>
+            <div class="frame">
+
+                <!-- innerHTML -->
+                <h3 id="innerHTML">Using innerHTML</h3>
+                <p>ในการเข้าถึง element ใน HTML เราจะใช้ method document.getElementById(id)
+                    โดยใช้ id ในการระบุ element ที่ต้องการใช้งาน<br>
+                    <div class="example">
+                        <p class="example">
+                            <h4>Example</h4>
+                            <p>&lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+                                &emsp;&lt;p id="demo"&gt;&lt;/p&gt; <br>
+                                &lt;script&gt; <br>
+                                &emsp;document.getElementById("demo").innerHTML = 7 + 9; <br> 
+                                &lt;/script&gt; <br>
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt;
+                            </p>
+                        </p>
+                    </div>
+                    <p>&emsp;จากตัวอย่างจะทำให้ paragraph ที่ id "demo" จะแสดงเป็นผลบวกของ 7 กับ 9 นั่นก็คือ 16 นั่นเอง </p>
+                </p>
+
+                <!-- document.write() -->
+                <h3 id="document.write">Using document.write()</h3>
+                <p>ถ้าต้องการ test แสดงผลบน html เราสามารถใช้ document.write() ได้ <br>
+                    <div class="example">
+                        <p class="example">
+                            <h4>Example</h4>
+                            <p>&lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+                                &emsp;&lt;p&gt;Test&lt;/p&gt; <br>
+                                &lt;script&gt; <br>
+                                &emsp;document.write("Test document.write()")<br> 
+                                &lt;/script&gt; <br>
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt;
+                            </p>
+                        </p>
+                    </div>
+                    <p>&emsp;จากตัวอย่างหน้าเว็บก็จะแสดงเป็น <br>
+                        &emsp;&emsp;Test <br>
+                        &emsp;&emsp;Test document.write()
+                    </p>
+                </p>
+
+                <!-- window.alert() -->
+                <h3 id="window.alert">Using window.alert()</h3>
+                <p>ใช้ในการแสดงเป็นหน้าต่างเตือนขึ้นมา<br>
+                    <div class="example">
+                        <p class="example">
+                            <h4>Example</h4>
+                            <p>&lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+                                &emsp;&lt;p&gt;Test window.alert()&lt;/p&gt; <br>
+                                &lt;script&gt; <br>
+                                &emsp;window.alert(5 + 6);<br> 
+                                &lt;/script&gt; <br>
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt;
+                            </p>
+                        </p>
+                    </div>
+                    <p>&emsp;จากตัวอย่าง หน้าเว็บก็จะแสดงเป็น box เตือนขึ้นมา โดยมีข้อความในนั้นเป็นผลที่ได้จากการบวกของ 5 กับ 6 นั่นก็คือ 11 นั่นเอง
+                        และหลังจากคลิก OK ก็จะแสดงเนื้อหาในเว็บนั้นต่อไป
+                    </p>
                 </p>
             </div>
         </div>
