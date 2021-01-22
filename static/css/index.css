@@ -149,3 +149,35 @@ div.example {
 .result {
     margin-left: 4em;
 }
+
+/* table */
+.table-container {
+    margin-left: 3em;
+    margin-right: 2em;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.12);
+    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.12);
+}
+
+.table-container th {
+    background-color: #654321;
+    color: white;
+}
+
+.table-container tr {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.column1 {
+    width: 15%;
+}
