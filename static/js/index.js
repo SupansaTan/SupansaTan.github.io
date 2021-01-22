@@ -17,3 +17,6 @@ document.getElementById("demo_str2").innerHTML = 'John';
 
 // operator
 document.getElementById("js_compute").innerHTML = (7 + 6) * 4; 
+
+// expression 
+document.getElementById("js_expression").innerHTML = "John" + " " + "Doe";
