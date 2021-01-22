@@ -14,3 +14,6 @@ document.getElementById("demo_num2").innerHTML = 1001;
 // string
 document.getElementById("demo_str1").innerHTML = "John";
 document.getElementById("demo_str2").innerHTML = 'John';
+
+// operator
+document.getElementById("js_compute").innerHTML = (7 + 6) * 4; 
