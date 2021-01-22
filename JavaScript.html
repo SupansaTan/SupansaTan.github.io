@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/index.css">
-    <script type="text/javascript" src="/static/js/index.js"></script>
     <title>JavaScript Tutorial</title>
 </head>
 <body>
@@ -288,8 +287,70 @@
                         </p>
                     </div>
                 </p>
+
+                <!-- code blocks -->
+                <h3 id="code_blocks">JavaScript Code Blocks</h3>
+                <p>ใน JavaScript เราจะใช้เครื่องหมายปีกกา {...} ในการจัดกลุ่ม statements ต่างๆ โดยเรามักจะเห็นได้จากการใช้ functions
+                    <div class="example">
+                        <p class="example">
+                            <h4>Example</h4>
+                            <p>function myFunction() {<br>
+                                &emsp;document.getElementById("demo1").innerHTML = "Hello World!" <br>
+                                &emsp;document.getElementById("demo2").innerHTML = "I'm Punch" <br>
+                                } 
+                            </p>
+                        </p>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <!-- Topic : JS Syntax -->
+        <div class="topic js-syntax">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="js_syntax">&ensp;JavaScript Syntax</h2>
+            <div class="frame">
+
+                <!-- js values -->
+                <h3 id="value">JavaScript Values</h3>
+                <p>&emsp;ใน JavaScript เราสามารถกำหนดค่าได้ 2 แบบ ได้แก่
+                    <p>&emsp;&emsp;1. Fixed values (เรียกว่า Literals)</p>
+                    <p>&emsp;&emsp;2. Variable values (เรียกว่า Variables)</p>
+                </p>
+
+                <!-- literals -->
+                <h3 id="literals">JavaScript Literals</h3>
+                <p>&emsp;1. Numbers : เราสามารถใช้ได้ทั้งแบบจำนวนเต็มและแบบมีจุดทศนิยม
+                    <div class="example">
+                        <p class="example">
+                            <h4>Example</h4>
+                            <p>document.getElementById("demo_num1").innerHTML = 10.50;<br>
+                                document.getElementById("demo_num2").innerHTML = 1001;
+                            </p>
+                        </p>
+                    </div>
+                    <p>&emsp;ผลลัพธ์ที่ได้ : </p>
+                    <p id="demo_num1" class="result"></p>
+                    <p id="demo_num2" class="result"></p>
+                </p>
+                <p>&emsp;2. String : เราสามารถใช้ได้ทั้ง Single หรือ Double Quotes 
+                    <div class="example">
+                        <p class="example">
+                            <h4>Example</h4>
+                            <p>document.getElementById("demo_str1").innerHTML = "John";<br>
+                                document.getElementById("demo_str2").innerHTML = 'John';
+                            </p>
+                        </p>
+                    </div>
+                    <p>&emsp;ผลลัพธ์ที่ได้ : </p>
+                    <p id="demo_str1" class="result"></p>
+                    <p id="demo_str2" class="result"></p>
+                </p>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="/static/js/index.js"></script>
 </body>
 </html>

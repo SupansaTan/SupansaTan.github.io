@@ -145,3 +145,7 @@ p {
 div.example {
     box-shadow: 5px 5px #D3D3D3;
 }
+
+.result {
+    margin-left: 4em;
+}
