@@ -710,6 +710,62 @@
                     <p id="js_arithmetic_exp" style="margin-left: 5em;"></p>
                 </p>
             </div>
+        </div>
+
+        <!-- Topic : JS Data Types -->
+        <div class="topic js-datatype">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="js_datatype">&ensp;JavaScript Data Types</h2>
+            <div class="frame">
+
+                <!-- dynamic types -->
+                <h3 id="types_dynamic">JavaScript Types are Dynamic</h3>
+                <p>&emsp;variable ชื่อเดียวกันสามารถเปลี่ยนแปลงค่าโดยที่เป็นคนละ type กันก็ได้</p>
+                <div class="example">
+                    <p class="example">
+                        <h4>Example</h4>
+                        <p>var x;  &emsp;  // Now x is undefined<br>
+                            x = 5; &emsp; // Now x is a Number<br>
+                            x = "Punch" &emsp;// Now x is a String
+                        </p>
+                    </p>
+                </div>   
+
+                <!-- boolean -->
+                <h3 id="type_boolean">JavaScript Booleans</h3>
+                <p>&emsp;boolean มีค่าได้ 2 ค่าคือ true หรือ false</p>
+                <div class="example">
+                    <p class="example">
+                        <h4>Example</h4>
+                        <p>var x = 5;   <br>
+                            var y = 5;  <br>
+                            var z = 6   <br>
+                            (x == y)  &emsp; // Return true <br>
+                            (x == z)  &emsp; // Return false
+                        </p> 
+                    </p>
+                </div> 
+                
+                <!-- the typeof Operator -->
+                <h3 id="type_operator">The typeof Operator</h3>
+                <p>&emsp;เราสามารถใช้ typeof ในการเช็ค type ของตัวแปรหรือค่าต่างๆได้</p>
+                <div class="example">
+                    <p class="example">
+                        <h4>Example</h4>
+                        <p> typeof "" &emsp; // Returns "string" <br>
+                            typeof "John" &emsp; // Returns "string" <br>
+                            typeof "John Doe" &emsp; // Returns "string"  <br>
+                            typeof 0   &emsp; // Returns "number" <br>
+                            typeof 314  &emsp; // Returns "number" <br>
+                            typeof 3.14  &emsp; // Returns "number" <br> 
+                            typeof (3)  &emsp; // Returns "number" <br>
+                            typeof (3 + 4)  &emsp; // Returns "number"
+                        </p> 
+                    </p>
+                </div> 
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="/static/js/index.js"></script>
