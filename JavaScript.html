@@ -748,7 +748,7 @@
                 </div> 
                 
                 <!-- the typeof Operator -->
-                <h3 id="type_operator">The typeof Operator</h3>
+                <h3 id="typeof_operator">The typeof Operator</h3>
                 <p>&emsp;เราสามารถใช้ typeof ในการเช็ค type ของตัวแปรหรือค่าต่างๆได้</p>
                 <div class="example">
                     <p class="example">
@@ -762,6 +762,37 @@
                             typeof (3)  &emsp; // Returns "number" <br>
                             typeof (3 + 4)  &emsp; // Returns "number"
                         </p> 
+                    </p>
+                </div> 
+
+                <!-- undefined -->
+                <h3 id="undefined">Undefined</h3>
+                <p>&emsp;ตัวแปรที่ไม่มีค่าจะเป็น undefined ซึ่งจะมี type เป็น undefined เช่นกัน</p>
+                <div class="example">
+                    <p class="example">
+                        <h4>Example</h4>
+                        <p> var car; &emsp; // the value is "", the typeof is "string" </p>
+                    </p>
+                </div> 
+
+                <!-- empty -->
+                <h3 id="empty_value">Empty Values</h3>
+                <p>&emsp;ต่างจาก undefined ตรงที่ type จะไม่ใช่ undefined และมีการกำหนดค่าไว้ แต่เป็นค่า empty</p>
+                <div class="example">
+                    <p class="example">
+                        <h4>Example</h4>
+                        <p> var car = ""; &emsp; // the value is "", the typeof is "string" </p>
+                    </p>
+                </div> 
+
+                <!-- null -->
+                <h3 id="null">Null</h3>
+                <p>&emsp;null คือไม่มีอะไรเลย มีค่าเท่ากับ undefined แต่ต่างกันตรงที่ null มี type เป็น object แต่ undefined มี type เป็น undefined</p>
+                <div class="example">
+                    <p class="example">
+                        <h4>Example</h4>
+                        <p>var person = {firstName:"John", lastName:"Doe"}; <br>
+                            person = null;    // Now value is null, but type is still an object </p>
                     </p>
                 </div> 
             </div>
