@@ -92,6 +92,17 @@ img {
     background-color: #FED300;
 }
 
+/* scroll up (arrow) */
+.scrollTop {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+}
+
+.scrollTop img:hover {
+    opacity: 0.5 !important;
+}
+
 /* content */
 .contents {
     max-width: 80%;
@@ -151,9 +162,13 @@ div.example {
 }
 
 /* table */
+table {
+    width: 100%;
+}
+
 .table-container {
     margin-left: 3em;
-    margin-right: 2em;
+    margin-right: 3em;
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
@@ -176,8 +191,4 @@ div.example {
 
 .table-container tr:nth-child(even) {
     background-color: #f8f8f8;
-}
-
-.column1 {
-    width: 15%;
 }
