@@ -45,7 +45,8 @@
             <a href="#js_variable">6. JS Variables</a><br>
             <a href="#js_operator">7. JS Operators</a><br>
             <a href="#js_arithmetic">8. JS Arithmetic</a><br>
-            <a href="#js_datatype">9. JS Data Types</a>
+            <a href="#js_datatype">9. JS Data Types</a><br>
+            <a href="#js_functions">10. JS Functions</a>
         </div>
     </div>
 
@@ -794,7 +795,55 @@
                         <p>var person = {firstName:"John", lastName:"Doe"}; <br>
                             person = null;    // Now value is null, but type is still an object </p>
                     </p>
-                </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Topic : JS Functions -->
+        <div class="topic js-functions">
+            <br>
+            <div class="vertical-line"></div>
+            <h2 id="js_functions">&ensp;JavaScript Functions</h2>
+            <div class="frame">
+
+                <!-- syntax -->
+                <h3 id="func_syntax">Syntax</h3>
+                <p>&emsp;code ที่จะถูก executed ใน function จะถูกใส่อยู่ภายใน curly brackets {}</p>
+                <div class="example">
+                    <p class="example">
+                        <p>function name(parameter1, parameter2) { <br>
+                            &emsp; // code to be executed <br>
+                            }
+                        </p>
+                    </p>
+                </div>
+
+                <!-- return -->
+                <h3 id="func_return">Function Return</h3>
+                <p>&emsp;return จะเป็นการส่งค่ากลับไปให้ที่ที่ function ถูกเรียกใช้</p>
+                <div class="example">
+                    <p class="example">
+                        <p>var x = myFunction(4,3); &emsp; // x จะมีค่าเป็น 12 <br> 
+                            <br>
+                            function myFunction(a, b) { <br>
+                            &emsp; return a * b;  <br>
+                            }
+                        </p>
+                    </p>
+                </div>
+
+                <!-- invokes function -->
+                <h3 id="func_invoked">The () Operator Invokes the Function</h3>
+                <p>&emsp;การเรียกใช้ function เราจะใส่ชื่อฟังก์ชันตามด้วยวงเล็บ () ซึ่งอาจจะมีหรือไม่มี parameter ที่จะส่งค่าไปให้ function</p>
+                <div class="example">
+                    <p class="example">
+                        <p>function toCelsius(fahrenheit) { <br> 
+                            &emsp; return (5/9) * (fahrenheit-32);  <br>
+                            } <br>
+                            document.getElementById("demo").innerHTML = toCelsius(77);
+                        </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
