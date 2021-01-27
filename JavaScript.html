@@ -101,6 +101,10 @@
                         &emsp;<button type="button" onclick="addWord()";>Try it</button>
                         <p id="demo"></p>
                     </p>
+                    <p class="result">จากตัวอย่างเราได้มีการใส่ script ไว้ในแท็ก  &lt;head&gt; และในแท็ก button ได้ใส่ attribute ที่ชื่อว่า onclick ไว้ 
+                        โดยเมื่อเรากดปุ่ม onclick ก็จะทำงาน โดยจะไปเรียกใช้ฟังก์ชัน myFunction() ใน JavaScript 
+                        ซึ่งเมื่อเรากดปุ่ม "Try it" ด้านบนนี้ paragraph ที่มี id = "demo" จะแสดงคำว่า "Paragraph changed." ขึ้นมา
+                    </p>
                 </p>
 
                 <!-- External JavaScript -->
@@ -241,6 +245,10 @@
                     </div>
                     <p>&emsp;จะได้ผลออกมาแบบนี้ (ลองกดปุ่มดูนะ): <br>
                         &emsp;<button onclick="window.print()";>Print this page</button>
+                    </p>
+                    <p class="result">
+                        เมื่อเรากดปุ่ม "Print this page" ข้างบนนี้ onclick ก็จะทำงาน โดยจะเรียกใช้ method window.print()
+                        ทำให้แสดงหน้าต่าง print ของเว็บ browser ขึ้นมา
                     </p>
                 </p>
             </div>
@@ -582,7 +590,7 @@
                         </tr>
                         <tr>
                             <td>===</td>
-                            <td>เหมือนกันทั้ง value และ type</td>
+                            <td>เท่ากับ (ทั้ง value และ type)</td>
                         </tr>
                         <tr>
                             <td>!=</td>
@@ -590,10 +598,10 @@
                         </tr>
                         <tr>
                             <td>!==</td>
-                            <td>value หรือ type ไม่เหมือนกัน</td>
+                            <td>ไม่เท่ากับ (value ไม่เท่ากัน หรือ type ไม่เท่ากัน)</td>
                         </tr>
                         <tr>
-                            <td> ></td>
+                            <td> ></td> 
                             <td>มากกว่า</td>
                         </tr>
                         <tr>
@@ -772,7 +780,7 @@
                 <div class="example">
                     <p class="example">
                         <h4>Example</h4>
-                        <p> var car; &emsp; // the value is "", the typeof is "string" </p>
+                        <p> var car; &emsp; // the value is undefined, type is "undefined" </p>
                     </p>
                 </div> 
 
@@ -782,7 +790,7 @@
                 <div class="example">
                     <p class="example">
                         <h4>Example</h4>
-                        <p> var car = ""; &emsp; // the value is "", the typeof is "string" </p>
+                        <p> var car = ""; &emsp; // the type is "string" </p>
                     </p>
                 </div> 
 
@@ -823,6 +831,7 @@
                 <p>&emsp;return จะเป็นการส่งค่ากลับไปให้ที่ที่ function ถูกเรียกใช้</p>
                 <div class="example">
                     <p class="example">
+                        <h4>Example</h4>
                         <p>var x = myFunction(4,3); &emsp; // x จะมีค่าเป็น 12 <br> 
                             <br>
                             function myFunction(a, b) { <br>
@@ -837,6 +846,7 @@
                 <p>&emsp;การเรียกใช้ function เราจะใส่ชื่อฟังก์ชันตามด้วยวงเล็บ () ซึ่งอาจจะมีหรือไม่มี parameter ที่จะส่งค่าไปให้ function</p>
                 <div class="example">
                     <p class="example">
+                        <h4>Example</h4>
                         <p>function toCelsius(fahrenheit) { <br> 
                             &emsp; return (5/9) * (fahrenheit-32);  <br>
                             } <br>
